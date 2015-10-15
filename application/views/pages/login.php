@@ -21,6 +21,7 @@ echo $result[0]["username"];
             <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Password">
         </div>
     </div>
+	<!-- COMMENTAAR -->
     <div class="form-group">
         <div class="col-xs-offset-1 col-xs-10">
             <button name="login" type="submit" class="btn btn-primary">Login</button>
