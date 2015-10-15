@@ -11,7 +11,7 @@ class Login_model extends CI_Model {
 	{
 		$data = array(
 			"username" => $this->input->post('username'),
-			"password" => $this->input->post('password')
+			"password" => md5($this->input->post('password'))
 		);
 		$query = $this->db->get_where("user", $data);
 
