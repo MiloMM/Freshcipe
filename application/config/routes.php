@@ -40,9 +40,17 @@
 
 $route['default_controller'] = "login_controller/index";
 $route['home'] = "login_controller/index";
+
 $route['login'] = 'login_controller/login';
 $route['logout'] = 'login_controller/logout';
 $route['register'] = 'login_controller/register';
+
+$route['createrecipe'] = 'recipe_controller/createrecipe';
+
+
+
+
+
 $route['404_override'] = '';
 
 

@@ -5,7 +5,7 @@ class Login_Controller extends CI_Controller{
 		parent::__construct();
 		$this->load->library('session');
 	}
-
+ 
 	public function index() {
 		$this->load->view('pages/home');
 	}
@@ -61,4 +61,12 @@ class Login_Controller extends CI_Controller{
 
 		$this->load->view('pages/register' , $content_data);
 	}
+
+		public function createrecipe() {
+
+		$this->load->view('pages/createrecipe');
+
+
+	}
+
 }
