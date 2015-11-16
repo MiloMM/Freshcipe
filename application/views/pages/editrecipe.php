@@ -1,0 +1,34 @@
+<?php
+include"application/views/templates/header.php";
+
+if ($this->session->userdata('id') == NULL) {
+ header("Location: home");
+} else {
+?>
+
+<br />
+<form action="" method="POST" class="form-horizontal">
+    <div class="form-group">
+        <label for="inputPostTitle" class="control-label col-md-1">Recipe Title</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" value="" name="posttitle" id="inputPostTitle" placeholder="Recipe title">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPostContent" class="control-label col-xs-1">Content</label>
+        <div class="col-xs-3">
+            <textarea rows="3" type="text" class="form-control" name="postcontent" id="inputPostContent" placeholder="Content"></textarea>
+        </div>
+    </div>
+	<!---  COMMENTAAR -->
+    <div class="form-group">
+        <div class="col-xs-offset-1 col-xs-10">
+            <button name="createpost" type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </div>
+</form>
+
+<?php
+}
+	include"application/views/templates/footer.php";
+?>
