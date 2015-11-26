@@ -18,18 +18,9 @@ class Recipe_Controller extends CI_Controller{
 		}
 		
 		$this->load->view('pages/createrecipe.php',  $content_data);
-	}
+		
 
-	public function editRecipe() {
-		$content_data = "";
 
-		if (isset($_GET['recipe_id'])) {
-
-			$this->load->model('recipe_model');
-			$content_data['recipe'] = $this->recipe_model->getRecipe();
-		}
-
-		$this->load->view('pages/editrecipe.php', $content_data);
 	}
 
 }

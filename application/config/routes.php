@@ -39,6 +39,8 @@
 */
 
 $route['default_controller'] = "login_controller/index";
+$route['404_override'] = '';
+
 $route['home'] = "login_controller/index";
 
 $route['login'] = 'login_controller/login';
@@ -46,12 +48,12 @@ $route['logout'] = 'login_controller/logout';
 $route['register'] = 'login_controller/register';
 
 $route['createrecipe'] = 'recipe_controller/createrecipe';
-$route['editrecipe/(:any)'] = "recipe_controller/editrecipe/$1";
+
+$route['showprofile'] = 'user_controller/showprofile';
 
 
 
 
-$route['404_override'] = '';
 
 
 /* End of file routes.php */
