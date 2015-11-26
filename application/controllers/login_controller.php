@@ -4,11 +4,15 @@ class Login_Controller extends CI_Controller{
 	public function __construct() {
 		parent::__construct();
 		$this->load->library('session');
+		$this->load->model('recipe_model');
 	}
  
 	public function index() {
-		$this->load->view('pages/home');
-	}
+		
+		$content_data["recipes"] = $this->recipe_model->getAllRecipes();
+
+		$this->load->view('pages/home', $content_data);
+	} 
 
 
 	public function login() {
@@ -62,8 +66,11 @@ class Login_Controller extends CI_Controller{
 		$this->load->view('pages/register' , $content_data);
 	}
 
+<<<<<<< HEAD
 		public function createrecipe() {
 			$this->load->view('pages/createrecipe');
 		}
+=======
+>>>>>>> 6d97598e38ac2cfb433c69eea06bb0eb5a216cef
 
 }

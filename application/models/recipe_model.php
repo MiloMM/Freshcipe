@@ -5,6 +5,7 @@ class Recipe_model extends CI_Model {
 		parent::__construct();
 		$this->load->database();
 	}
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 	public function getRecipe($id) {
@@ -19,6 +20,9 @@ class Recipe_model extends CI_Model {
 >>>>>>> 8ab34c54337abf9da4fcf4b100a4d2741f6fe32c
 	}
 
+=======
+ 
+>>>>>>> 6d97598e38ac2cfb433c69eea06bb0eb5a216cef
 	public function uploadrecipe()
 	{
 		$tags = implode(",",$this->input->post("postTags"));
@@ -32,6 +36,7 @@ class Recipe_model extends CI_Model {
 		$query = $this->db->insert("recipes", $data);
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	public function editRecipe($id) {
 		$tags = implode(",",$this->input->post("postTags"));
@@ -54,6 +59,12 @@ class Recipe_model extends CI_Model {
 		$this->db->update('recipes', $recipe_id);
 >>>>>>> 8ab34c54337abf9da4fcf4b100a4d2741f6fe32c
 
+=======
+	public function getAllRecipes()
+	{
+		$query = $this->db->get('recipes');
+		return $query;
+>>>>>>> 6d97598e38ac2cfb433c69eea06bb0eb5a216cef
 	}
 
 }

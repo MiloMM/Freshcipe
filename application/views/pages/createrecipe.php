@@ -9,6 +9,11 @@ if ($this->session->userdata('id') == NULL) {
 <br />
 <form action="" method="POST" class="form-horizontal">
     <div class="form-group">
+        <div class="col-xs-offset-1 col-xs-10">
+            <button name="backhome" class="btn btn-secondary"><a href="home">Back</a></button>
+        </div>
+    </div>
+    <div class="form-group">
         <label for="inputPostTitle" class="control-label col-md-1">Recipe Title</label>
         <div class="col-xs-3">
             <input type="text" class="form-control"  name="posttitle" id="inputPostTitle" placeholder="Recipe title">
