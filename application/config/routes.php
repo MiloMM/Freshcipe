@@ -46,8 +46,12 @@ $route['logout'] = 'login_controller/logout';
 $route['register'] = 'login_controller/register';
 
 $route['createrecipe'] = 'recipe_controller/createrecipe';
+<<<<<<< HEAD
 $route['editrecipe'] = "recipe_controller/editrecipe";
 $route['editrecipe/(:num)'] = "recipe_controller/editrecipe/$1";
+=======
+$route['editrecipe/(:any)'] = "recipe_controller/editrecipe/$1";
+>>>>>>> 8ab34c54337abf9da4fcf4b100a4d2741f6fe32c
 
 
 
