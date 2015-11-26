@@ -14,5 +14,5 @@ if (!empty($this->session->userdata('username'))) {
 
 
 <?php } else { ?>
-<a href="login">Login</a><p>or</p><a href="register">Register</a>
+<a href="/school/project/login">Login</a><p>or</p><a href="register">Register</a>
 <?php } ?>

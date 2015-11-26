@@ -63,10 +63,7 @@ class Login_Controller extends CI_Controller{
 	}
 
 		public function createrecipe() {
-
-		$this->load->view('pages/createrecipe');
-
-
-	}
+			$this->load->view('pages/createrecipe');
+		}
 
 }

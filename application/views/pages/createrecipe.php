@@ -20,6 +20,15 @@ if ($this->session->userdata('id') == NULL) {
             <textarea rows="3" type="text" class="form-control" name="postcontent" id="inputPostContent" placeholder="Content"></textarea>
         </div>
     </div>
+    <div class="form-group">
+        <label for="inputPostContent" class="control-label col-xs-1">Tags</label>
+        <div class="col-xs-3">
+            <input type="checkbox" name="postTags[]" id="inputPostTags" value="spicy">Spicy
+            <input type="checkbox" name="postTags[]" id="inputPostTags" value="indian">Indian <br>
+            <input type="checkbox" name="postTags[]" id="inputPostTags" value="crispy">Crispy 
+            <input type="checkbox" name="postTags[]" id="inputPostTags" value="italian">Italian <br>
+        </div>
+    </div>
 	<!---  COMMENTAAR -->
     <div class="form-group">
         <div class="col-xs-offset-1 col-xs-10">
